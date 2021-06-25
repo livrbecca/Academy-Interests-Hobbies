@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+
+## ACADEMY COHORT 1 HOBBIES & INTERESTS
+With the option to filter by pod or alphabetically.
+
+
+Preview project [here on Netifly](cohort-interests-hobbies.netlify.app)
+
+
+![image](https://user-images.githubusercontent.com/69110329/123440364-9bdd1700-d5ca-11eb-88d8-6b3eb20ab343.png)
+![image](https://user-images.githubusercontent.com/69110329/123440420-ab5c6000-d5ca-11eb-8712-3ba54c2610fc.png)
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
