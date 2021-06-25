@@ -1,5 +1,12 @@
 const data = [
   {
+    name: "Dafe",
+    url: "https://ca.slack-edge.com/T020PP5R389-U0216DG4C4R-0aee8756a1a7-512",
+    pod: "Green",
+    notes:
+      "Enjoys playing football, going out for drinks & great conversations",
+  },
+  {
     name: "Hollie",
     url: "https://ca.slack-edge.com/T020PP5R389-U021HK0F38Q-2c2a35553846-512",
     pod: "Blue",
@@ -87,12 +94,6 @@ const data = [
     notes:
       "Plays the violin and is learning guitar. Enjoys nature walks & all things beauty",
   },
-  //   {
-  //     name: "",
-  //     url: "",
-  //     pod: "",
-  //     notes: "",
-  //   },
 ];
 
 export default data;
