@@ -1,12 +1,6 @@
 import { useState } from "react";
-import { PartyProps as AddToListProps } from "../App";
-
-export interface IProps {
-  displayedPeople: AddToListProps["displayedPeople"];
-  setPeople: React.Dispatch<
-    React.SetStateAction<AddToListProps["displayedPeople"]>
-  >;
-}
+//import { PartyProps } from "../App";
+import { IProps } from "../utils/interfaces";
 
 const AddToList: React.FC<IProps> = ({ displayedPeople, setPeople }) => {
   const [input, setInput] = useState({

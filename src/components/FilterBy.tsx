@@ -2,15 +2,8 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 //import { IProps as FilterProps } from "./AddToList";
-import { PartyProps as AddToListProps } from "../App";
-
-interface FilterProps {
-  originalData: AddToListProps["displayedPeople"];
-  displayedPeople: AddToListProps["displayedPeople"];
-  setPeople: React.Dispatch<
-    React.SetStateAction<AddToListProps["displayedPeople"]>
-  >;
-}
+//import { PartyProps as AddToListProps } from "../utils/interfaces";
+import { FilterProps } from "../utils/interfaces";
 
 const FilterBy: React.FC<FilterProps> = ({
   displayedPeople,
@@ -22,12 +15,12 @@ const FilterBy: React.FC<FilterProps> = ({
     setPeople(chosenPod);
   };
 
-  const filterName = () => {
+  // sortName
+  const sortNameA_Z = () => {
     const sortedNames = [...originalData].sort((a, b) =>
       a.name.localeCompare(b.name)
-    );
-    console.log(sortedNames); // works
-    setPeople(sortedNames); // doesn't work
+    ); // not mutating
+    setPeople(sortedNames);
   };
 
   const displayAll = () => {
@@ -53,7 +46,7 @@ const FilterBy: React.FC<FilterProps> = ({
         <Dropdown.Item onClick={() => filterPod("Blue")} className="filter">
           Blue Pod
         </Dropdown.Item>
-        <Dropdown.Item onClick={() => filterName()} className="filter">
+        <Dropdown.Item onClick={() => sortNameA_Z()} className="filter">
           Name A-Z
         </Dropdown.Item>
       </DropdownButton>

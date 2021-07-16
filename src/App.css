@@ -11,6 +11,12 @@ body {
   overflow-x: hidden !important;
 }
 
+.searchInput {
+  position: relative;
+  bottom: 130px;
+  font-size: 21px;
+}
+
 /* Header */
 
 .headerBox {

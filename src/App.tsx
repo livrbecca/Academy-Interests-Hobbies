@@ -5,21 +5,12 @@ import FilterBy from "./components/FilterBy";
 import { useState } from "react";
 import data from "./data";
 import "./App.css";
-
-export interface PartyProps {
-  displayedPeople: {
-    name: string;
-    url: string;
-    pod: string;
-    notes?: string;
-  }[];
-}
+import { PartyProps } from "./utils/interfaces";
 
 function App() {
+  /* HERE */
   const [displayedPeople, setPeople] =
     useState<PartyProps["displayedPeople"]>(data);
-  //const greenPodScholars = displayedPeople.filter((p) => p.pod === "Green"); // console log works
-  // const bluePodScholars = displayedPeople.filter((p) => p.pod === "Blue");
 
   return (
     <div className="App">
@@ -30,9 +21,11 @@ function App() {
         originalData={data}
       />
       <div className="flex-container">
+        {/* HERE */}
         <div className="flex-child displayedPeople">
-          <PeopleList displayedPeople={displayedPeople} />
+          <PeopleList displayedPeople={displayedPeople} setPeople={setPeople} />
         </div>
+
         <div className="flex-child add">
           <AddToList displayedPeople={displayedPeople} setPeople={setPeople} />
         </div>
