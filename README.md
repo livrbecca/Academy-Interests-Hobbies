@@ -3,7 +3,7 @@
 With the option to filter by pod or alphabetically.
 
 
-Preview project [here on Netifly](cohort-interests-hobbies.netlify.app)
+Preview project [here on Netifly](https://cohort-interests-hobbies.netlify.app)
 
 
 ![image](https://user-images.githubusercontent.com/69110329/123440364-9bdd1700-d5ca-11eb-88d8-6b3eb20ab343.png)
